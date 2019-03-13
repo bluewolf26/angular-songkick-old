@@ -1,0 +1,41 @@
+.search-result li {
+  color: #ced4da;
+  border-bottom: 1px solid #ced4da;
+  border-left: 1px solid #ced4da;
+  border-right: 1px solid #ced4da;
+  height: 34px;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.search-result li a {
+  color: #ced4da;
+  display: block;
+  text-decoration: none;
+}
+
+.search-result li a:hover {
+  color: #004085;
+}
+.search-result li a:active {
+  color: #004085;
+}
+
+.search-result li:hover {
+  color: #004085;
+  border-bottom: 1px solid #007bff;
+  border-left: 1px solid #007bff;
+  border-right: 1px solid #007bff;
+  background-color: #cce5ff;
+}
+
+ul.search-result {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+agm-map {
+  height: 300px;
+}
