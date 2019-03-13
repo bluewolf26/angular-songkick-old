@@ -1,0 +1,8 @@
+<ngx-ui-loader [loaderId]="'loader-01'"></ngx-ui-loader>
+<app-event-add *ngIf="showComp === 1" (addEv)="addEvent($event)" (closeEv)="toggleEventsComponent()"></app-event-add>
+<app-events *ngIf="showComp === 0" [events]="events"
+            (showEvEmmiter)="toggleEventDetailsComponent($event)"
+            (delEvEmmiter)="deleteEvent($event)"
+            (showAddEvFormEmmiter)="toggleAddEvFormComponent()">
+</app-events>
+<app-event-details *ngIf="showComp === 2" [event]="selectedEvent" (closeEv)="toggleEventsComponent()"></app-event-details>
