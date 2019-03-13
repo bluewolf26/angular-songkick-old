@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/my-project
+    working_directory: ~/angular-songkick
     docker:
       - image: circleci/node:8-browsers
     steps:
