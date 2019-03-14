@@ -60,7 +60,7 @@ describe('SongkickService', () => {
 
       const req = httpMock
           .expectOne(request => request.method === 'GET' && request.url === `${service.urlArtist}`);
-      expect(req.request.params.get('query')).toEqual('test');
+      expect(req.request.params.get('query')).toEqual('toto');
       expect(req.request.params.get('apikey')).toEqual(SONGCKICKAPICONF.apiKey);
     });
 
